@@ -1,7 +1,4 @@
 <h1>Characters</h1>
-<% @characters.each do |character| %>
-<div class="character_div">
-  <h2><%= character.name %> </h2>
-  <h3>Location: <%= character.location %></h3>
-</div>
-<% end %>
+<%= render partial: 'character',
+           collection: @characters,
+           locals: { display_student_link: true } %>

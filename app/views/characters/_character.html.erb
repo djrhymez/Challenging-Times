@@ -1,0 +1,11 @@
+<div class="character">
+  <h2>
+    <% if display_student_link %>
+      <%= link_to character.name, character_path(character) %>
+    <% else %>
+      <%= character.name %>
+    <% end %>
+  </h2>
+  <h3>Location: <%= character.location %></h3>
+
+</div>

@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get 'characters', to: 'characters#index', as: 'characters'
 
+  get 'characters/:id', to: 'characters#member', as: 'character', number: /\d+/
+
   root to: 'pages#home', as: 'home'
 end
