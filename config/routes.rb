@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   get 'lizards/:number', to: 'pages#lizards', as: 'lizards', number: /\d+/
 
+  get 'characters', to: 'characters#index', as: 'characters'
+
   root to: 'pages#home', as: 'home'
 end
